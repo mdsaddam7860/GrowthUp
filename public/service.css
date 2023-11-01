@@ -1,0 +1,125 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  } */
+  .ourService {
+    height: 70vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .ourService .rowService {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ourService .column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .ourService .rowService h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.ourService .rowService .column .card {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #f95f06 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .ourService .rowService .column h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+  }
+  .ourService .rowService .column p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+  .ourService .rowService .column .card .icon-wrapper {
+    background-color: #f95f06;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+  .ourService .rowService .column .card:hover {
+    background-position: 0 100%;
+  }
+  .ourService .rowService .column .card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #f95f06;
+  }
+  .ourService .rowService .column .card:hover h3 {
+    color: #ffffff;
+  }
+  .ourService .rowService .column .card:hover p {
+    color: #f0f0f0;
+  }
+
+  @media screen and (min-width: 768px) {
+    .ourService {
+      padding: 0 2em;
+      /* height: 756vh; */
+    }
+    .ourService .rowService .column {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .ourService {
+      padding: 1em 3em;
+    }
+    .ourService .rowService .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      z-index: 9;
+    }
+  }
+  @media (max-width: 992px){
+    .ourService{
+      height: 172vh;
+    }
+  }
+  /* @media (max-width: 1200px){
+    .ourService{
+      height: 350vh;
+    }
+  } */
+
+  
+  /* @media (min-width: 1200px){
+    .ourService{
+      height: 260vh;
+    }
+  }
+  @media (min-width: 1066px) and (max-width:1200px){
+    .ourService{
+      height: 353vh;
+    }
+  } */
+
+  
